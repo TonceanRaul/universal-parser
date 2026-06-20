@@ -7,14 +7,15 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "parserOptions": {
-    "project": "./tsconfig.json",
+    "project": "./tsconfig.eslint.json",
     "tsconfigRootDir": "."
   },
   "rules": {
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/consistent-type-imports": ["error", { "disallowTypeAnnotations": false }],
+    "no-constant-condition": ["error", { "checkLoops": false }],
     "no-console": ["warn", { "allow": ["error"] }],
     "eqeqeq": "error",
     "prefer-const": "error"
@@ -23,5 +24,17 @@
     "node": true,
     "es2020": true
   },
-  "ignorePatterns": ["dist/", "coverage/", "*.js", "jest.config.ts"]
+  "ignorePatterns": ["dist/", "coverage/", "*.js", "jest.config.ts"],
+  "overrides": [
+    {
+      "files": ["tests/**/*.ts"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-argument": "off"
+      }
+    }
+  ]
 }

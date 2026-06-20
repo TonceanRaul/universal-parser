@@ -27,8 +27,8 @@ export class JsonFormatter {
     if (typeof val === 'number')  return opts.colorize ? chalk.cyan(String(val))                 : String(val);
     if (typeof val === 'string')  return opts.colorize ? chalk.green(`"${this.escapeStr(val)}"`) : `"${this.escapeStr(val)}"`;
 
-    if (Array.isArray(val)) return this.renderArray(val as JsonArray, opts, depth);
-    return this.renderObject(val as JsonObject, opts, depth);
+    if (Array.isArray(val)) return this.renderArray(val, opts, depth);
+    return this.renderObject(val, opts, depth);
   }
 
   private renderObject(obj: JsonObject, opts: FormatOptions, depth: number): string {
@@ -110,12 +110,12 @@ export class JsonFormatter {
         this.buildTree(item, opts, `[${i}]`, depth + 1, childPrefix, i === val.length - 1, out);
       });
     } else {
-      const objKeys = Object.keys(val as JsonObject);
+      const objKeys = Object.keys(val);
       const objLabel = opts.colorize ? chalk.blue(label) : label;
       const meta = opts.colorize ? chalk.gray(` {${objKeys.length}}`) : ` {${objKeys.length}}`;
       out.push(`${prefix}${connector}${objLabel}${meta}`);
       objKeys.forEach((k, i) => {
-        this.buildTree((val as JsonObject)[k], opts, k, depth + 1, childPrefix, i === objKeys.length - 1, out);
+        this.buildTree(val[k], opts, k, depth + 1, childPrefix, i === objKeys.length - 1, out);
       });
     }
   }
@@ -131,8 +131,8 @@ export class JsonFormatter {
 
   private typeOf(val: JsonValue): string {
     if (val === null)            return 'null';
-    if (Array.isArray(val))      return `array[${(val as JsonArray).length}]`;
-    if (typeof val === 'object') return `object{${Object.keys(val as JsonObject).length}}`;
+    if (Array.isArray(val))      return `array[${val.length}]`;
+    if (typeof val === 'object') return `object{${Object.keys(val).length}}`;
     return typeof val;
   }
 
