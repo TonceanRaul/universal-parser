@@ -135,11 +135,13 @@ jobs:
 
       - name: Ensure CLI exits 0 on valid JSON
         run: |
-          echo '{"ok":true}' | node dist/cli.js /dev/stdin --no-color --no-stats --stdin; test $? -eq 0
+          echo '{"ok":true}' | node dist/cli.js /dev/stdin --no-color --no-stats --stdin
 
       - name: Ensure CLI exits 1 on invalid JSON
         run: |
-          echo '{"broken":}' | node dist/cli.js /dev/stdin --no-color --no-stats --stdin; test $? -eq 1
+          exit_code=0
+          echo '{"broken":}' | node dist/cli.js /dev/stdin --no-color --no-stats --stdin || exit_code=$?
+          test "$exit_code" -eq 1
 
   # ─── Summary gate ─────────────────────────────────────────────────────────
   ci-success:
