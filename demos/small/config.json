@@ -1,0 +1,58 @@
+{
+  "app": {
+    "name": "universal-parser",
+    "version": "1.0.0",
+    "environment": "production",
+    "debug": false
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8080,
+    "keepAliveTimeout": 65000,
+    "maxRequestSize": "10mb",
+    "cors": {
+      "origins": ["https://example.com", "https://app.example.com"],
+      "methods": ["GET", "POST", "PUT", "DELETE"],
+      "credentials": true
+    }
+  },
+  "database": {
+    "primary": {
+      "host": "db-primary.internal",
+      "port": 5432,
+      "name": "parser_db",
+      "pool": { "min": 2, "max": 20, "idleTimeoutMs": 30000 }
+    },
+    "replica": {
+      "host": "db-replica.internal",
+      "port": 5432,
+      "name": "parser_db",
+      "pool": { "min": 1, "max": 10, "idleTimeoutMs": 30000 }
+    }
+  },
+  "cache": {
+    "driver": "redis",
+    "host": "cache.internal",
+    "port": 6379,
+    "ttlSeconds": 3600,
+    "keyPrefix": "uparse:"
+  },
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "outputs": ["stdout", "file"],
+    "file": { "path": "/var/log/uparse/app.log", "maxSizeMB": 100, "rotate": true }
+  },
+  "features": {
+    "jsonParser": true,
+    "yamlParser": false,
+    "tomlParser": false,
+    "xmlParser": false,
+    "csvParser": false
+  },
+  "rateLimit": {
+    "windowMs": 60000,
+    "maxRequests": 100,
+    "skipPaths": ["/health", "/metrics"]
+  }
+}

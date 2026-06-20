@@ -1,0 +1,385 @@
+{
+  "catalog": {
+    "version": "2.1.0",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "totalProducts": 30,
+    "currency": "USD"
+  },
+  "categories": [
+    { "id": "cat-001", "name": "Electronics", "slug": "electronics", "parent": null },
+    { "id": "cat-002", "name": "Computers",   "slug": "computers",   "parent": "cat-001" },
+    { "id": "cat-003", "name": "Peripherals", "slug": "peripherals", "parent": "cat-001" },
+    { "id": "cat-004", "name": "Audio",       "slug": "audio",       "parent": "cat-001" },
+    { "id": "cat-005", "name": "Wearables",   "slug": "wearables",   "parent": "cat-001" },
+    { "id": "cat-006", "name": "Home",        "slug": "home",        "parent": null },
+    { "id": "cat-007", "name": "Books",       "slug": "books",       "parent": null }
+  ],
+  "products": [
+    {
+      "id": "prod-001",
+      "sku": "LP-PRO-13-2026",
+      "name": "ProBook 13 Laptop",
+      "slug": "probook-13-laptop",
+      "categoryId": "cat-002",
+      "brand": "Novex",
+      "description": "Ultra-thin 13-inch laptop with OLED display, 32 GB RAM, and 1 TB NVMe SSD. Perfect for developers and creatives.",
+      "price": 1299.99,
+      "compareAtPrice": 1499.99,
+      "inStock": true,
+      "stockCount": 58,
+      "weight": { "value": 1.2, "unit": "kg" },
+      "dimensions": { "width": 29.8, "height": 1.4, "depth": 21.0, "unit": "cm" },
+      "rating": { "average": 4.7, "count": 412, "distribution": { "5": 280, "4": 90, "3": 28, "2": 9, "1": 5 } },
+      "tags": ["laptop", "oled", "ultrabook", "developer"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-001/main.webp", "alt": "ProBook 13 front view", "isPrimary": true },
+        { "url": "https://cdn.example.com/products/prod-001/side.webp", "alt": "ProBook 13 side view",  "isPrimary": false }
+      ],
+      "variants": [
+        { "id": "var-001a", "name": "Space Grey / 16 GB / 512 GB", "price": 1099.99, "sku": "LP-PRO-13-GRY-16-512", "options": { "color": "Space Grey", "ram": "16 GB", "storage": "512 GB" }, "inStock": true },
+        { "id": "var-001b", "name": "Space Grey / 32 GB / 1 TB",   "price": 1299.99, "sku": "LP-PRO-13-GRY-32-1T",  "options": { "color": "Space Grey", "ram": "32 GB", "storage": "1 TB"  }, "inStock": true },
+        { "id": "var-001c", "name": "Silver / 32 GB / 1 TB",       "price": 1349.99, "sku": "LP-PRO-13-SLV-32-1T",  "options": { "color": "Silver",     "ram": "32 GB", "storage": "1 TB"  }, "inStock": false }
+      ],
+      "specifications": {
+        "processor": "Nexon M3 Pro",
+        "display": "13.3\" OLED 2560×1600",
+        "battery": "72 Wh, up to 18 h",
+        "ports": ["USB-C x3", "3.5mm audio"],
+        "os": "NexOS 14",
+        "wireless": ["Wi-Fi 6E", "Bluetooth 5.3"]
+      },
+      "reviews": [
+        { "id": "rev-001-1", "author": "techie_tom",   "rating": 5, "title": "Best laptop I have ever owned", "body": "The OLED display is stunning and the battery life is incredible. Performance is top-notch for coding.", "date": "2026-05-10T14:22:00Z", "helpful": 47 },
+        { "id": "rev-001-2", "author": "creative_sue", "rating": 4, "title": "Great for design work",          "body": "Colour accuracy is excellent. Only minor gripe is the port selection.", "date": "2026-04-02T09:11:00Z", "helpful": 31 }
+      ],
+      "metadata": { "createdAt": "2026-01-01T00:00:00Z", "updatedAt": "2026-06-01T00:00:00Z", "views": 18420, "purchases": 1041 }
+    },
+    {
+      "id": "prod-002",
+      "sku": "KB-MECH-TKL-BLU",
+      "name": "MechType TKL Keyboard",
+      "slug": "mechtype-tkl-keyboard",
+      "categoryId": "cat-003",
+      "brand": "KeyCraft",
+      "description": "Tenkeyless mechanical keyboard with blue switches, per-key RGB, and aluminium top plate.",
+      "price": 129.00,
+      "compareAtPrice": 149.00,
+      "inStock": true,
+      "stockCount": 214,
+      "weight": { "value": 0.92, "unit": "kg" },
+      "dimensions": { "width": 36.0, "height": 3.8, "depth": 13.5, "unit": "cm" },
+      "rating": { "average": 4.5, "count": 1083, "distribution": { "5": 620, "4": 310, "3": 100, "2": 33, "1": 20 } },
+      "tags": ["keyboard", "mechanical", "tkl", "rgb", "gaming", "typing"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-002/main.webp",    "alt": "MechType TKL top view",  "isPrimary": true },
+        { "url": "https://cdn.example.com/products/prod-002/profile.webp", "alt": "MechType TKL profile",  "isPrimary": false }
+      ],
+      "variants": [
+        { "id": "var-002a", "name": "Blue Switches",  "price": 129.00, "sku": "KB-MECH-TKL-BLU", "options": { "switches": "Blue (Clicky)" },  "inStock": true },
+        { "id": "var-002b", "name": "Red Switches",   "price": 129.00, "sku": "KB-MECH-TKL-RED", "options": { "switches": "Red (Linear)" },   "inStock": true },
+        { "id": "var-002c", "name": "Brown Switches", "price": 129.00, "sku": "KB-MECH-TKL-BRN", "options": { "switches": "Brown (Tactile)" }, "inStock": true }
+      ],
+      "specifications": {
+        "layout": "TKL (87-key)",
+        "switches": "KeyCraft mechanical",
+        "connectivity": "USB-C detachable cable",
+        "backlighting": "Per-key RGB",
+        "topPlate": "Aluminium",
+        "nKeyRollover": true
+      },
+      "reviews": [
+        { "id": "rev-002-1", "author": "keyboard_wizard", "rating": 5, "title": "Phenomenal typing feel", "body": "The blue switches have a satisfying click. Build quality is exceptional for the price.", "date": "2026-05-20T11:00:00Z", "helpful": 88 },
+        { "id": "rev-002-2", "author": "gamer_pro_99",    "rating": 4, "title": "Solid gaming keyboard",   "body": "RGB is vibrant. I switched to reds for gaming and they are buttery smooth.", "date": "2026-03-15T16:30:00Z", "helpful": 62 }
+      ],
+      "metadata": { "createdAt": "2025-08-01T00:00:00Z", "updatedAt": "2026-05-22T00:00:00Z", "views": 24100, "purchases": 3812 }
+    },
+    {
+      "id": "prod-003",
+      "sku": "HP-NC-PRO-BLK",
+      "name": "SoundShield Pro Headphones",
+      "slug": "soundshield-pro-headphones",
+      "categoryId": "cat-004",
+      "brand": "Auron",
+      "description": "Over-ear noise-cancelling headphones with 40 mm drivers, 30-hour battery, and adaptive ANC.",
+      "price": 249.95,
+      "compareAtPrice": null,
+      "inStock": true,
+      "stockCount": 137,
+      "weight": { "value": 0.28, "unit": "kg" },
+      "dimensions": { "width": 18.5, "height": 20.0, "depth": 8.5, "unit": "cm" },
+      "rating": { "average": 4.8, "count": 2940, "distribution": { "5": 2200, "4": 530, "3": 140, "2": 48, "1": 22 } },
+      "tags": ["headphones", "anc", "wireless", "noise-cancelling", "audio"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-003/main.webp",   "alt": "SoundShield Pro front", "isPrimary": true },
+        { "url": "https://cdn.example.com/products/prod-003/folded.webp", "alt": "SoundShield folded",   "isPrimary": false }
+      ],
+      "variants": [
+        { "id": "var-003a", "name": "Midnight Black", "price": 249.95, "sku": "HP-NC-PRO-BLK", "options": { "color": "Midnight Black" }, "inStock": true },
+        { "id": "var-003b", "name": "Pearl White",    "price": 249.95, "sku": "HP-NC-PRO-WHT", "options": { "color": "Pearl White"    }, "inStock": true }
+      ],
+      "specifications": {
+        "drivers": "40 mm dynamic",
+        "frequencyResponse": "20 Hz – 20 kHz",
+        "anc": "Adaptive 3-mic ANC",
+        "battery": "30 h (ANC on), 40 h (ANC off)",
+        "chargingTime": "2 h via USB-C",
+        "bluetooth": "5.2",
+        "codecs": ["SBC", "AAC", "aptX HD"]
+      },
+      "reviews": [
+        { "id": "rev-003-1", "author": "audiophile_max", "rating": 5, "title": "Exceptional sound isolation", "body": "The ANC kills background noise completely. Audio quality rivals headphones twice the price.", "date": "2026-06-01T08:00:00Z", "helpful": 120 }
+      ],
+      "metadata": { "createdAt": "2025-03-10T00:00:00Z", "updatedAt": "2026-05-30T00:00:00Z", "views": 51200, "purchases": 8820 }
+    },
+    {
+      "id": "prod-004",
+      "sku": "MON-4K-27-IPS",
+      "name": "ClearView 27 4K Monitor",
+      "slug": "clearview-27-4k-monitor",
+      "categoryId": "cat-003",
+      "brand": "Luminate",
+      "description": "27-inch 4K IPS monitor with 144 Hz refresh rate, HDR600, and USB-C 96W power delivery.",
+      "price": 599.00,
+      "compareAtPrice": 699.00,
+      "inStock": true,
+      "stockCount": 32,
+      "weight": { "value": 5.8, "unit": "kg" },
+      "dimensions": { "width": 61.5, "height": 53.2, "depth": 21.0, "unit": "cm" },
+      "rating": { "average": 4.6, "count": 817, "distribution": { "5": 510, "4": 210, "3": 62, "2": 25, "1": 10 } },
+      "tags": ["monitor", "4k", "ips", "144hz", "hdr", "usb-c"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-004/main.webp", "alt": "ClearView 27 front", "isPrimary": true }
+      ],
+      "variants": [],
+      "specifications": {
+        "resolution": "3840 × 2160 (4K UHD)",
+        "panelType": "IPS",
+        "refreshRate": "144 Hz",
+        "responseTime": "1 ms GtG",
+        "hdr": "HDR600",
+        "colorGamut": "99% sRGB, 95% DCI-P3",
+        "ports": ["HDMI 2.1 x2", "DisplayPort 1.4 x2", "USB-C 96W", "USB-A x4"],
+        "vesa": "100×100 mm"
+      },
+      "reviews": [
+        { "id": "rev-004-1", "author": "workstation_pete", "rating": 5, "title": "Perfect productivity monitor", "body": "USB-C PD is a game-changer. Display accuracy is outstanding out of the box.", "date": "2026-04-18T10:00:00Z", "helpful": 74 }
+      ],
+      "metadata": { "createdAt": "2025-11-01T00:00:00Z", "updatedAt": "2026-06-05T00:00:00Z", "views": 19830, "purchases": 2245 }
+    },
+    {
+      "id": "prod-005",
+      "sku": "SW-SMARTWATCH-PRO",
+      "name": "PulseWatch Pro",
+      "slug": "pulsewatch-pro",
+      "categoryId": "cat-005",
+      "brand": "WristTech",
+      "description": "Advanced health-tracking smartwatch with ECG, SpO2, 5-day battery, and always-on AMOLED display.",
+      "price": 349.00,
+      "compareAtPrice": 399.00,
+      "inStock": true,
+      "stockCount": 89,
+      "weight": { "value": 0.048, "unit": "kg" },
+      "dimensions": { "width": 4.5, "height": 1.1, "depth": 3.8, "unit": "cm" },
+      "rating": { "average": 4.4, "count": 5610, "distribution": { "5": 3200, "4": 1500, "3": 600, "2": 210, "1": 100 } },
+      "tags": ["smartwatch", "health", "ecg", "fitness", "amoled"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-005/main.webp",    "alt": "PulseWatch Pro face",   "isPrimary": true },
+        { "url": "https://cdn.example.com/products/prod-005/straps.webp",  "alt": "Interchangeable straps","isPrimary": false }
+      ],
+      "variants": [
+        { "id": "var-005a", "name": "44 mm / Graphite", "price": 349.00, "sku": "SW-PRO-44-GRP", "options": { "size": "44 mm", "color": "Graphite" }, "inStock": true  },
+        { "id": "var-005b", "name": "44 mm / Gold",     "price": 379.00, "sku": "SW-PRO-44-GLD", "options": { "size": "44 mm", "color": "Gold"     }, "inStock": true  },
+        { "id": "var-005c", "name": "40 mm / Graphite", "price": 319.00, "sku": "SW-PRO-40-GRP", "options": { "size": "40 mm", "color": "Graphite" }, "inStock": false }
+      ],
+      "specifications": {
+        "display": "1.9\" AMOLED 448×368",
+        "sensors": ["Heart rate", "ECG", "SpO2", "Accelerometer", "Barometer", "GPS"],
+        "battery": "5 days typical, 14 days power save",
+        "waterResistance": "5 ATM",
+        "connectivity": ["Bluetooth 5.3", "Wi-Fi 802.11n"],
+        "compatibility": ["iOS 16+", "Android 11+"]
+      },
+      "reviews": [
+        { "id": "rev-005-1", "author": "fitness_fanatic", "rating": 5, "title": "Best fitness tracker I have used", "body": "ECG readings have been spot on compared to my cardiologist visit. Sleep tracking is detailed.", "date": "2026-05-28T07:00:00Z", "helpful": 155 },
+        { "id": "rev-005-2", "author": "daily_runner",   "rating": 4, "title": "Great GPS accuracy",              "body": "GPS locks fast and routes look accurate. Battery lasts well over 4 days with workout tracking.", "date": "2026-05-01T18:45:00Z", "helpful": 98 }
+      ],
+      "metadata": { "createdAt": "2025-06-15T00:00:00Z", "updatedAt": "2026-06-10T00:00:00Z", "views": 72400, "purchases": 15300 }
+    },
+    {
+      "id": "prod-006",
+      "sku": "MIC-USB-COND-SILVER",
+      "name": "VoxCapture USB Microphone",
+      "slug": "voxcapture-usb-microphone",
+      "categoryId": "cat-004",
+      "brand": "VoiceFirst",
+      "description": "Cardioid condenser USB microphone with real-time monitoring, mute button, and gain control. Plug-and-play.",
+      "price": 89.95,
+      "compareAtPrice": 109.95,
+      "inStock": true,
+      "stockCount": 310,
+      "weight": { "value": 0.55, "unit": "kg" },
+      "dimensions": { "width": 5.5, "height": 24.0, "depth": 5.5, "unit": "cm" },
+      "rating": { "average": 4.3, "count": 2201, "distribution": { "5": 1100, "4": 720, "3": 250, "2": 81, "1": 50 } },
+      "tags": ["microphone", "usb", "condenser", "podcast", "streaming", "recording"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-006/main.webp", "alt": "VoxCapture on desk", "isPrimary": true }
+      ],
+      "variants": [
+        { "id": "var-006a", "name": "Silver", "price": 89.95, "sku": "MIC-USB-COND-SILVER", "options": { "color": "Silver" }, "inStock": true  },
+        { "id": "var-006b", "name": "Black",  "price": 89.95, "sku": "MIC-USB-COND-BLACK",  "options": { "color": "Black"  }, "inStock": true  }
+      ],
+      "specifications": {
+        "polar": "Cardioid",
+        "frequencyResponse": "50 Hz – 18 kHz",
+        "sensitivity": "-36 dB",
+        "sampleRate": "192 kHz / 24-bit",
+        "connectivity": "USB-A & USB-C",
+        "headphoneOutput": "3.5mm zero-latency"
+      },
+      "reviews": [
+        { "id": "rev-006-1", "author": "podcast_queen", "rating": 5, "title": "Crystal clear voice", "body": "My listeners immediately noticed the audio quality improvement. Zero latency monitoring is super helpful.", "date": "2026-03-22T15:30:00Z", "helpful": 67 }
+      ],
+      "metadata": { "createdAt": "2025-09-01T00:00:00Z", "updatedAt": "2026-04-20T00:00:00Z", "views": 28900, "purchases": 6700 }
+    },
+    {
+      "id": "prod-007",
+      "sku": "MOUSE-ERGO-WIRELESS",
+      "name": "ErgoGlide Wireless Mouse",
+      "slug": "ergoglide-wireless-mouse",
+      "categoryId": "cat-003",
+      "brand": "PrecisionFlow",
+      "description": "Ergonomic vertical wireless mouse with 4000 DPI optical sensor, 6 programmable buttons, and 90-day battery life.",
+      "price": 59.99,
+      "compareAtPrice": null,
+      "inStock": true,
+      "stockCount": 445,
+      "weight": { "value": 0.135, "unit": "kg" },
+      "dimensions": { "width": 7.0, "height": 10.0, "depth": 4.5, "unit": "cm" },
+      "rating": { "average": 4.5, "count": 3890, "distribution": { "5": 2400, "4": 990, "3": 330, "2": 110, "1": 60 } },
+      "tags": ["mouse", "ergonomic", "wireless", "vertical"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-007/main.webp", "alt": "ErgoGlide side view", "isPrimary": true }
+      ],
+      "variants": [
+        { "id": "var-007a", "name": "Right-hand / Black", "price": 59.99, "sku": "MOUSE-ERGO-R-BLK", "options": { "hand": "Right", "color": "Black" }, "inStock": true  },
+        { "id": "var-007b", "name": "Right-hand / White", "price": 59.99, "sku": "MOUSE-ERGO-R-WHT", "options": { "hand": "Right", "color": "White" }, "inStock": true  }
+      ],
+      "specifications": {
+        "sensor": "Optical 4000 DPI",
+        "connectivity": "2.4 GHz USB-A dongle",
+        "buttons": 6,
+        "battery": "AA (90-day life)",
+        "compatibility": ["Windows", "macOS", "Linux"]
+      },
+      "reviews": [
+        { "id": "rev-007-1", "author": "rsi_recovery", "rating": 5, "title": "Saved my wrist", "body": "After switching to this vertical mouse my wrist pain disappeared within a week. Highly recommend to anyone with RSI.", "date": "2026-04-05T09:00:00Z", "helpful": 201 }
+      ],
+      "metadata": { "createdAt": "2025-02-10T00:00:00Z", "updatedAt": "2026-06-01T00:00:00Z", "views": 44300, "purchases": 11200 }
+    },
+    {
+      "id": "prod-008",
+      "sku": "DESK-LAMP-LED-SMART",
+      "name": "LumiDesk Smart LED Lamp",
+      "slug": "lumidesk-smart-led-lamp",
+      "categoryId": "cat-006",
+      "brand": "BrightHome",
+      "description": "App-controlled LED desk lamp with 5 colour temperatures, USB-C charging port, and circadian rhythm mode.",
+      "price": 44.99,
+      "compareAtPrice": 54.99,
+      "inStock": true,
+      "stockCount": 620,
+      "weight": { "value": 0.72, "unit": "kg" },
+      "dimensions": { "width": 12.0, "height": 40.0, "depth": 18.0, "unit": "cm" },
+      "rating": { "average": 4.2, "count": 1540, "distribution": { "5": 760, "4": 510, "3": 180, "2": 60, "1": 30 } },
+      "tags": ["lamp", "desk", "led", "smart", "app-controlled"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-008/main.webp", "alt": "LumiDesk on desk", "isPrimary": true }
+      ],
+      "variants": [
+        { "id": "var-008a", "name": "White",  "price": 44.99, "sku": "LAMP-SMART-WHT", "options": { "color": "White"  }, "inStock": true },
+        { "id": "var-008b", "name": "Black",  "price": 44.99, "sku": "LAMP-SMART-BLK", "options": { "color": "Black"  }, "inStock": true },
+        { "id": "var-008c", "name": "Walnut", "price": 49.99, "sku": "LAMP-SMART-WLN", "options": { "color": "Walnut" }, "inStock": true }
+      ],
+      "specifications": {
+        "bulbType": "LED (non-replaceable)",
+        "colorTemperature": "2700 K – 6500 K",
+        "brightness": "300 lm (max)",
+        "colorRenderingIndex": 90,
+        "usbCharging": "USB-C 18W",
+        "control": ["Touch panel", "iOS/Android app", "Voice (Alexa/Google)"]
+      },
+      "reviews": [
+        { "id": "rev-008-1", "author": "night_owl_dev", "rating": 4, "title": "Great ambiance, decent app", "body": "The circadian mode is subtle but genuinely helpful. App could use some polish but works fine.", "date": "2026-05-14T22:00:00Z", "helpful": 41 }
+      ],
+      "metadata": { "createdAt": "2025-07-20T00:00:00Z", "updatedAt": "2026-05-15T00:00:00Z", "views": 16200, "purchases": 4100 }
+    },
+    {
+      "id": "prod-009",
+      "sku": "BOOK-RUST-SYSTEMS",
+      "name": "Systems Programming in Rust",
+      "slug": "systems-programming-in-rust",
+      "categoryId": "cat-007",
+      "brand": "CodePress Publishing",
+      "description": "A comprehensive guide to writing safe, high-performance systems software in Rust. Covers ownership, concurrency, async, and FFI.",
+      "price": 49.99,
+      "compareAtPrice": null,
+      "inStock": true,
+      "stockCount": 1200,
+      "weight": { "value": 0.82, "unit": "kg" },
+      "dimensions": { "width": 18.0, "height": 25.5, "depth": 3.2, "unit": "cm" },
+      "rating": { "average": 4.9, "count": 682, "distribution": { "5": 600, "4": 65, "3": 12, "2": 3, "1": 2 } },
+      "tags": ["book", "rust", "programming", "systems", "concurrency"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-009/cover.webp", "alt": "Book cover", "isPrimary": true }
+      ],
+      "variants": [
+        { "id": "var-009a", "name": "Paperback", "price": 49.99, "sku": "BOOK-RUST-PB", "options": { "format": "Paperback" }, "inStock": true },
+        { "id": "var-009b", "name": "eBook",     "price": 29.99, "sku": "BOOK-RUST-EB", "options": { "format": "eBook"     }, "inStock": true }
+      ],
+      "specifications": {
+        "author": "Dr. Elena Vasquez",
+        "pages": 712,
+        "edition": "3rd",
+        "isbn": "978-3-16-148410-0",
+        "language": "English",
+        "publisher": "CodePress Publishing",
+        "publishedDate": "2025-09-15"
+      },
+      "reviews": [
+        { "id": "rev-009-1", "author": "rustacean_senior", "rating": 5, "title": "The definitive Rust systems book", "body": "I have read every Rust book out there. This is the one I recommend to everyone. The async chapter alone is worth the price.", "date": "2026-01-10T12:00:00Z", "helpful": 312 }
+      ],
+      "metadata": { "createdAt": "2025-09-20T00:00:00Z", "updatedAt": "2026-02-01T00:00:00Z", "views": 28100, "purchases": 5900 }
+    },
+    {
+      "id": "prod-010",
+      "sku": "USB-HUB-10P-PRO",
+      "name": "ConnectHub 10-Port USB Dock",
+      "slug": "connecthub-10-port-usb-dock",
+      "categoryId": "cat-003",
+      "brand": "LinkPro",
+      "description": "10-port USB docking station with 4× USB-A 3.2, 2× USB-C 10 Gbps, HDMI 4K, DisplayPort, Ethernet, and SD card reader.",
+      "price": 119.00,
+      "compareAtPrice": 139.00,
+      "inStock": false,
+      "stockCount": 0,
+      "weight": { "value": 0.38, "unit": "kg" },
+      "dimensions": { "width": 16.0, "height": 3.2, "depth": 7.5, "unit": "cm" },
+      "rating": { "average": 4.4, "count": 2110, "distribution": { "5": 1200, "4": 620, "3": 200, "2": 60, "1": 30 } },
+      "tags": ["usb-hub", "dock", "usb-c", "hdmi", "ethernet"],
+      "images": [
+        { "url": "https://cdn.example.com/products/prod-010/main.webp", "alt": "ConnectHub dock", "isPrimary": true }
+      ],
+      "variants": [],
+      "specifications": {
+        "ports": ["USB-A 3.2 Gen 2 x4", "USB-C 10 Gbps x2", "HDMI 4K@60Hz", "DisplayPort 1.4", "RJ45 Gigabit", "SD/microSD", "3.5mm audio"],
+        "powerDelivery": "100W pass-through",
+        "hostConnection": "USB-C (cable included)",
+        "compatibility": ["Windows", "macOS", "ChromeOS"]
+      },
+      "reviews": [
+        { "id": "rev-010-1", "author": "dual_monitor_dan", "rating": 5, "title": "Replaced 3 dongles", "body": "One cable to rule them all. Dual 4K at 60 Hz works flawlessly. Ethernet is rock solid.", "date": "2026-04-29T14:00:00Z", "helpful": 93 }
+      ],
+      "metadata": { "createdAt": "2025-05-01T00:00:00Z", "updatedAt": "2026-06-18T00:00:00Z", "views": 38700, "purchases": 9400 }
+    }
+  ]
+}

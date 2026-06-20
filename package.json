@@ -1,0 +1,47 @@
+{
+  "name": "universal-parser",
+  "version": "1.0.0",
+  "description": "Extensible multi-format parser with pretty-printing CLI — ships with JSON, ready for more",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "uparse": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --coverageThreshold='{\"global\":{\"lines\":80,\"functions\":80,\"branches\":70}}'",
+    "test:ci": "jest --ci --coverage --coverageReporters=lcov --coverageReporters=text",
+    "lint": "eslint src tests --ext .ts",
+    "lint:fix": "eslint src tests --ext .ts --fix",
+    "parse": "ts-node src/cli.ts",
+    "demo:small": "ts-node src/cli.ts demos/small/config.json --tree --stats",
+    "demo:large": "ts-node src/cli.ts demos/large/products.json --tree --stats --max-depth 3",
+    "demo:pretty": "ts-node src/cli.ts demos/small/user.json --color",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["parser", "json", "formatter", "pretty-print", "cli", "extensible"],
+  "author": "TonceanRaul",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

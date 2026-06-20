@@ -1,0 +1,180 @@
+{
+  "report": {
+    "id": "rpt-2026-06-20",
+    "title": "Universal Parser — Monthly Analytics Report",
+    "period": { "start": "2026-05-21T00:00:00Z", "end": "2026-06-20T23:59:59Z", "days": 30 },
+    "generatedAt": "2026-06-20T06:00:00Z",
+    "timezone": "UTC"
+  },
+  "summary": {
+    "totalUsers":      48210,
+    "newUsers":        11430,
+    "returningUsers":  36780,
+    "sessions":       124870,
+    "pageViews":      498340,
+    "avgSessionDurationSec": 312,
+    "bounceRate":       0.312,
+    "pagesPerSession":  3.99,
+    "conversionRate":   0.042
+  },
+  "dailyMetrics": [
+    { "date": "2026-05-21", "users": 1420, "newUsers": 340, "sessions": 3810, "pageViews": 15240, "bounceRate": 0.33, "avgDuration": 298 },
+    { "date": "2026-05-22", "users": 1380, "newUsers": 310, "sessions": 3690, "pageViews": 14760, "bounceRate": 0.34, "avgDuration": 295 },
+    { "date": "2026-05-23", "users": 1550, "newUsers": 380, "sessions": 4150, "pageViews": 16600, "bounceRate": 0.31, "avgDuration": 308 },
+    { "date": "2026-05-24", "users": 1610, "newUsers": 400, "sessions": 4310, "pageViews": 17240, "bounceRate": 0.30, "avgDuration": 315 },
+    { "date": "2026-05-25", "users": 1700, "newUsers": 430, "sessions": 4550, "pageViews": 18200, "bounceRate": 0.29, "avgDuration": 322 },
+    { "date": "2026-05-26", "users": 1490, "newUsers": 360, "sessions": 3980, "pageViews": 15920, "bounceRate": 0.32, "avgDuration": 305 },
+    { "date": "2026-05-27", "users": 1340, "newUsers": 290, "sessions": 3580, "pageViews": 14320, "bounceRate": 0.35, "avgDuration": 290 },
+    { "date": "2026-05-28", "users": 1620, "newUsers": 415, "sessions": 4335, "pageViews": 17340, "bounceRate": 0.30, "avgDuration": 318 },
+    { "date": "2026-05-29", "users": 1745, "newUsers": 450, "sessions": 4670, "pageViews": 18680, "bounceRate": 0.28, "avgDuration": 330 },
+    { "date": "2026-05-30", "users": 1830, "newUsers": 480, "sessions": 4900, "pageViews": 19600, "bounceRate": 0.27, "avgDuration": 340 },
+    { "date": "2026-05-31", "users": 1790, "newUsers": 460, "sessions": 4790, "pageViews": 19160, "bounceRate": 0.28, "avgDuration": 335 },
+    { "date": "2026-06-01", "users": 1870, "newUsers": 500, "sessions": 5010, "pageViews": 20040, "bounceRate": 0.26, "avgDuration": 348 },
+    { "date": "2026-06-02", "users": 1920, "newUsers": 520, "sessions": 5145, "pageViews": 20580, "bounceRate": 0.25, "avgDuration": 355 },
+    { "date": "2026-06-03", "users": 1680, "newUsers": 390, "sessions": 4500, "pageViews": 18000, "bounceRate": 0.31, "avgDuration": 315 },
+    { "date": "2026-06-04", "users": 1540, "newUsers": 350, "sessions": 4125, "pageViews": 16500, "bounceRate": 0.33, "avgDuration": 300 },
+    { "date": "2026-06-05", "users": 1960, "newUsers": 540, "sessions": 5250, "pageViews": 21000, "bounceRate": 0.24, "avgDuration": 360 },
+    { "date": "2026-06-06", "users": 2010, "newUsers": 560, "sessions": 5390, "pageViews": 21560, "bounceRate": 0.23, "avgDuration": 368 },
+    { "date": "2026-06-07", "users": 2080, "newUsers": 580, "sessions": 5575, "pageViews": 22300, "bounceRate": 0.22, "avgDuration": 375 },
+    { "date": "2026-06-08", "users": 2100, "newUsers": 590, "sessions": 5625, "pageViews": 22500, "bounceRate": 0.22, "avgDuration": 378 },
+    { "date": "2026-06-09", "users": 2150, "newUsers": 610, "sessions": 5760, "pageViews": 23040, "bounceRate": 0.21, "avgDuration": 385 },
+    { "date": "2026-06-10", "users": 2090, "newUsers": 575, "sessions": 5600, "pageViews": 22400, "bounceRate": 0.22, "avgDuration": 372 },
+    { "date": "2026-06-11", "users": 1870, "newUsers": 495, "sessions": 5010, "pageViews": 20040, "bounceRate": 0.25, "avgDuration": 348 },
+    { "date": "2026-06-12", "users": 2200, "newUsers": 630, "sessions": 5895, "pageViews": 23580, "bounceRate": 0.20, "avgDuration": 392 },
+    { "date": "2026-06-13", "users": 2280, "newUsers": 660, "sessions": 6110, "pageViews": 24440, "bounceRate": 0.19, "avgDuration": 400 },
+    { "date": "2026-06-14", "users": 2310, "newUsers": 670, "sessions": 6190, "pageViews": 24760, "bounceRate": 0.19, "avgDuration": 405 },
+    { "date": "2026-06-15", "users": 2260, "newUsers": 645, "sessions": 6055, "pageViews": 24220, "bounceRate": 0.20, "avgDuration": 395 },
+    { "date": "2026-06-16", "users": 2120, "newUsers": 600, "sessions": 5680, "pageViews": 22720, "bounceRate": 0.22, "avgDuration": 378 },
+    { "date": "2026-06-17", "users": 1990, "newUsers": 545, "sessions": 5330, "pageViews": 21320, "bounceRate": 0.24, "avgDuration": 360 },
+    { "date": "2026-06-18", "users": 2380, "newUsers": 695, "sessions": 6380, "pageViews": 25520, "bounceRate": 0.18, "avgDuration": 418 },
+    { "date": "2026-06-19", "users": 2420, "newUsers": 710, "sessions": 6485, "pageViews": 25940, "bounceRate": 0.17, "avgDuration": 425 }
+  ],
+  "userSegments": [
+    {
+      "id": "seg-001",
+      "name": "Power Users",
+      "description": "Users who parse more than 50 documents per month",
+      "criteria": { "parsesPerMonth": { "gte": 50 } },
+      "size": 4210,
+      "percentage": 8.7,
+      "metrics": { "avgSessionDuration": 520, "conversionRate": 0.18, "retentionRate": 0.91 }
+    },
+    {
+      "id": "seg-002",
+      "name": "Casual Users",
+      "description": "Users who parse 1-10 documents per month",
+      "criteria": { "parsesPerMonth": { "gte": 1, "lte": 10 } },
+      "size": 22100,
+      "percentage": 45.8,
+      "metrics": { "avgSessionDuration": 185, "conversionRate": 0.021, "retentionRate": 0.42 }
+    },
+    {
+      "id": "seg-003",
+      "name": "Developers",
+      "description": "Users who primarily use the API",
+      "criteria": { "primaryChannel": "api" },
+      "size": 8950,
+      "percentage": 18.6,
+      "metrics": { "avgSessionDuration": 640, "conversionRate": 0.24, "retentionRate": 0.88 }
+    },
+    {
+      "id": "seg-004",
+      "name": "Enterprise",
+      "description": "Users on enterprise or team plans",
+      "criteria": { "plan": ["enterprise", "team"] },
+      "size": 2100,
+      "percentage": 4.4,
+      "metrics": { "avgSessionDuration": 780, "conversionRate": 0.62, "retentionRate": 0.95 }
+    },
+    {
+      "id": "seg-005",
+      "name": "Free Tier",
+      "description": "Users on the free plan",
+      "criteria": { "plan": "free" },
+      "size": 28900,
+      "percentage": 59.9,
+      "metrics": { "avgSessionDuration": 142, "conversionRate": 0.008, "retentionRate": 0.28 }
+    }
+  ],
+  "topPages": [
+    { "rank": 1,  "path": "/",                     "title": "Home",              "pageViews": 98400, "uniquePageViews": 51200, "avgTimeOnPageSec": 45,  "exitRate": 0.38 },
+    { "rank": 2,  "path": "/docs",                  "title": "Documentation",     "pageViews": 72100, "uniquePageViews": 38900, "avgTimeOnPageSec": 420, "exitRate": 0.22 },
+    { "rank": 3,  "path": "/try",                   "title": "Try It Online",     "pageViews": 64800, "uniquePageViews": 35100, "avgTimeOnPageSec": 680, "exitRate": 0.18 },
+    { "rank": 4,  "path": "/docs/json",             "title": "JSON Parser Docs",  "pageViews": 48200, "uniquePageViews": 28700, "avgTimeOnPageSec": 510, "exitRate": 0.19 },
+    { "rank": 5,  "path": "/pricing",               "title": "Pricing",           "pageViews": 41500, "uniquePageViews": 24800, "avgTimeOnPageSec": 95,  "exitRate": 0.44 },
+    { "rank": 6,  "path": "/blog/extending-parsers","title": "Blog: Extending",   "pageViews": 28900, "uniquePageViews": 19100, "avgTimeOnPageSec": 385, "exitRate": 0.52 },
+    { "rank": 7,  "path": "/changelog",             "title": "Changelog",         "pageViews": 18200, "uniquePageViews": 12400, "avgTimeOnPageSec": 210, "exitRate": 0.41 },
+    { "rank": 8,  "path": "/api",                   "title": "API Reference",     "pageViews": 15600, "uniquePageViews": 10800, "avgTimeOnPageSec": 590, "exitRate": 0.14 },
+    { "rank": 9,  "path": "/signup",                "title": "Sign Up",           "pageViews": 12800, "uniquePageViews": 10100, "avgTimeOnPageSec": 75,  "exitRate": 0.58 },
+    { "rank": 10, "path": "/login",                 "title": "Log In",            "pageViews": 11200, "uniquePageViews": 9300,  "avgTimeOnPageSec": 65,  "exitRate": 0.62 }
+  ],
+  "trafficSources": [
+    { "source": "Organic Search", "sessions": 62100, "percentage": 49.7, "newUsers": 7200, "conversionRate": 0.041 },
+    { "source": "Direct",         "sessions": 28400, "percentage": 22.7, "newUsers": 2100, "conversionRate": 0.058 },
+    { "source": "Referral",       "sessions": 18700, "percentage": 15.0, "newUsers": 1400, "conversionRate": 0.035 },
+    { "source": "Social",         "sessions": 9200,  "percentage": 7.4,  "newUsers": 530,  "conversionRate": 0.018 },
+    { "source": "Email",          "sessions": 4900,  "percentage": 3.9,  "newUsers": 140,  "conversionRate": 0.072 },
+    { "source": "Paid Search",    "sessions": 1570,  "percentage": 1.3,  "newUsers": 60,   "conversionRate": 0.091 }
+  ],
+  "conversionFunnel": {
+    "name": "Free to Pro Upgrade",
+    "steps": [
+      { "step": 1, "name": "Landing page visit", "users": 48210, "dropOffRate": 0.0   },
+      { "step": 2, "name": "Signed up",           "users": 11430, "dropOffRate": 0.763 },
+      { "step": 3, "name": "First parse",         "users":  9840, "dropOffRate": 0.139 },
+      { "step": 4, "name": "Viewed pricing",      "users":  4120, "dropOffRate": 0.581 },
+      { "step": 5, "name": "Started checkout",    "users":  2980, "dropOffRate": 0.277 },
+      { "step": 6, "name": "Completed upgrade",   "users":  2025, "dropOffRate": 0.320 }
+    ],
+    "overallConversionRate": 0.042
+  },
+  "abTests": [
+    {
+      "id": "ab-001",
+      "name": "CTA Button Colour",
+      "status": "completed",
+      "startDate": "2026-05-21",
+      "endDate": "2026-06-03",
+      "hypothesis": "A green CTA button will increase click-through rate vs blue",
+      "variants": [
+        { "id": "control",  "name": "Blue Button",  "traffic": 0.5, "users": 14200, "conversions": 568,  "conversionRate": 0.040 },
+        { "id": "variant1", "name": "Green Button", "traffic": 0.5, "users": 14350, "conversions": 646,  "conversionRate": 0.045 }
+      ],
+      "winner": "variant1",
+      "uplift": 0.125,
+      "statisticalSignificance": 0.97
+    },
+    {
+      "id": "ab-002",
+      "name": "Onboarding Flow Length",
+      "status": "running",
+      "startDate": "2026-06-10",
+      "endDate": null,
+      "hypothesis": "A shorter 3-step onboarding increases activation rate vs 6-step",
+      "variants": [
+        { "id": "control",  "name": "6-step onboarding", "traffic": 0.5, "users": 5100, "conversions": 2550, "conversionRate": 0.500 },
+        { "id": "variant1", "name": "3-step onboarding", "traffic": 0.5, "users": 5090, "conversions": 2850, "conversionRate": 0.560 }
+      ],
+      "winner": null,
+      "uplift": null,
+      "statisticalSignificance": 0.81
+    }
+  ],
+  "parseOperations": {
+    "totalParses":       1842000,
+    "successfulParses":  1836540,
+    "failedParses":         5460,
+    "successRate":          0.997,
+    "avgParseTimeMs":           8,
+    "p99ParseTimeMs":          42,
+    "byFormat": {
+      "json": { "parses": 1842000, "successRate": 0.997, "avgTimeMs": 8 }
+    },
+    "topErrors": [
+      { "code": "UNEXPECTED_TOKEN", "count": 2890, "percentage": 0.530 },
+      { "code": "UNTERMINATED_STRING", "count": 1210, "percentage": 0.222 },
+      { "code": "EMPTY_INPUT",       "count":  820, "percentage": 0.150 },
+      { "code": "INVALID_ESCAPE",    "count":  540, "percentage": 0.099 }
+    ]
+  }
+}

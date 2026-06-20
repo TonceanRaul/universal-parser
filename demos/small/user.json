@@ -1,0 +1,45 @@
+{
+  "id": "usr-8f2a1c",
+  "username": "alice_dev",
+  "email": "alice@example.com",
+  "profile": {
+    "firstName": "Alice",
+    "lastName": "Thornton",
+    "displayName": "Alice T.",
+    "bio": "Passionate about compilers, parsers, and making machines understand humans.",
+    "avatar": "https://avatars.example.com/alice_dev.png",
+    "location": { "city": "Berlin", "country": "DE", "timezone": "Europe/Berlin" }
+  },
+  "roles": ["user", "developer", "beta-tester"],
+  "preferences": {
+    "theme": "dark",
+    "language": "en",
+    "notifications": {
+      "email": true,
+      "push": false,
+      "sms": false
+    },
+    "editor": {
+      "tabSize": 2,
+      "fontFamily": "JetBrains Mono",
+      "fontSize": 14,
+      "wordWrap": true
+    }
+  },
+  "stats": {
+    "parsesTotal": 4821,
+    "parsesThisMonth": 312,
+    "successRate": 0.9987,
+    "favoriteFormat": "json"
+  },
+  "subscription": {
+    "plan": "pro",
+    "startedAt": "2024-01-15T00:00:00Z",
+    "expiresAt": "2025-01-15T00:00:00Z",
+    "autoRenew": true
+  },
+  "createdAt": "2023-06-01T12:00:00Z",
+  "updatedAt": "2025-03-22T08:44:11Z",
+  "lastLoginAt": "2026-06-19T21:30:00Z",
+  "active": true
+}
